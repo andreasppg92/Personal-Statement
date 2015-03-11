@@ -25,7 +25,7 @@ form a basis of $\mathbb{C}^2$. An $n-$qubit system however, is defined and tran
 This exponential explosion is what restricts us from simulating such systems.
 
 A qubit however can also be seen as a probability distribution, with the two basis vector
-being the possible outcomes. This restricts $\alpha$ and $\beta$ such that $|\alpha|^2 + |\beta|^2 = 1$. This restriction
+being the possible outcomes. This restricts $\alpha$ and $\beta$ such that $|\alpha|^2 + |\beta|^2 = 1$. This
 allows us to rewrite an arbitrary qubit as $\Ket{\psi} = \cos(\frac{\theta}{2})\Ket{0} + e^{i\phi}\sin(\frac{\theta}{2})\Ket{1}$,
 which places the qubit as a point on a Bloch Sphere. From this, we can see that the two angles, $\theta$ and $\phi$ are sufficient
 to represent the information held by a qubit.
@@ -34,7 +34,12 @@ We would like to examine a quantum system from the perspective of these angles. 
 cartesian to polar coordinates. The major benefit of this is that it would allow us to exploit symmetries, in order to reduce
 the amount of information needed to represent $n-$qubit systems, and therefore the amount of operations needed to transorm it.
 
+By examining how arbitray qubits are joint, we can define a multidimensional bloch sphere, we can introduce transormations
+and constraints between the angles that live in it, in order to efficiently express quantum operations.
+
 To do this we would have to examine quantum operations, with respect to their effects on the angles of the qubits used.
+We would be interested in a number of such operations.
+
 This can be done by defining how a collection of qubits translates to a collection of angle-pairs, giving rise
 to a multidimensional bloch sphere.
 
